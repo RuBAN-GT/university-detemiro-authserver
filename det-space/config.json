@@ -1,0 +1,90 @@
+{
+    "inherit"           : false,
+    "memory"            : true,
+    "router.url"        : "https://auth.vsu.ru",
+    "router.ssl"        : true,
+    "router.hosts"      : "auth.vsu.ru",
+    "router.page"       : "authentication",
+    "router.preferred"  : "permalink,common",
+    "database.config"   : "pgsql:host=localhost;dbname=authsso",
+    "database.user"     : "authsso",
+    "database.pass"     : "0pHjcfEJjcxsUcdp",
+    "theme"             : "master",
+    "auth.tokenLive"    : 86400,
+    "auth.cookieLive"   : 86400,
+    "banSystem.idTry"   : 0,
+    "banSystem.ipTry"   : 5,
+    "banSystem.idBanTTL": 60,
+    "banSystem.ipBanTTL": 60,
+    "radius.host"       : "10.122.33.14",
+    "radius.port"       : 1812,
+    "radius.secret"     : "iugYFTVlhjbQMPlkjguh",
+    "radius.nasHost"    : "10.122.33.30",
+    "radius.fields"     : "",
+    "radius.map"        : {
+        "26277.0" : "vsuService",
+        "26277.1" : "NationalRealName",
+        "26277.2" : "RealName",
+        "26277.3" : "displayName",
+        "26277.4" : "employeeNumber",
+        "26277.5" : "departmentNumber",
+        "26277.6" : "employeeType",
+        "26277.7" : "uidNumber",
+        "26277.8" : "gidNumber",
+        "26277.9" : "gecos",
+        "26277.10": "homeDirectory",
+        "26277.11": "loginShell",
+        "26277.12": "memberUid",
+        "26277.13": "memberOf",
+        "26277.14": "userPrincipalName",
+        "26277.15": "automountMapName",
+        "26277.16": "automountKey",
+        "26277.17": "automountInformation",
+        "26277.18": "quota",
+        "26277.19": "studentCourse",
+        "26277.20": "studentGroup"
+    },
+    "employees.host"      : "10.19.0.151",
+    "employees.user"      : "uic",
+    "employees.pass"      : "mU39bI2xts0",
+    "employees.home"      : "/opt/oracle/app/oracle/product/11.2.0/client_2",
+    "employees.lib"       : "/opt/oracle/app/oracle/product/11.2.0/client_2/lib",
+    "employees.tns"       : "/opt/oracle/app/oracle/product/11.2.0/client_2/network/admin",
+    "employees.lang"      : "RUSSIAN_RUSSIA.AL32UTF8",
+    "employees.mode"      : "all",
+    "employees.database.e": "GAL_DB",
+    "employees.database.s": "DB1",
+    "employees.fields.e"  : "",
+    "employees.fields.s"  : "",
+    "employees.map"       : {
+        "DIVISION_CODE": "departmentNumber",
+        "KURS"         : "course",
+        "GROUP_"       : "group"
+    },
+    "rels" : [
+        {
+            "method": "require",
+            "name"  : "database"
+        },
+        {
+            "method": "require",
+            "name"  : "redis"
+        },
+        {
+            "method": "require",
+            "name"  : "router"
+        },
+        {
+            "method": "require",
+            "name"  : "theme"
+        },
+        {
+            "method": "require",
+            "name"  : "forms"
+        },
+        {
+            "method": "support",
+            "name"  : "banSystem"
+        }
+    ]
+}

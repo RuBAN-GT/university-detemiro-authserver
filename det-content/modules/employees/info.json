@@ -1,0 +1,10 @@
+{
+    "code": "employees",
+    "info": "Данные из отдела кадров.",
+    "rels": [
+        {
+            "method": "require",
+            "name"  : "radius"
+        }
+    ]
+}

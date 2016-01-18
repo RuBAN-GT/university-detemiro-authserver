@@ -1,0 +1,26 @@
+body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f0f0f0;
+}
+
+#page-404 {
+    text-align: center;
+}
+
+#page-auth {
+    max-width: 500px;
+    margin: auto;
+}
+
+#messages {
+    margin-top: 10px;
+}
+
+.alert {
+    margin-bottom: 10px;
+}
+
+#page-auth .panel-heading {
+    text-align: center;
+}
